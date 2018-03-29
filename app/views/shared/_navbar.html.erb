@@ -1,0 +1,16 @@
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0px">
+  <div class="container">
+    <div class="navbar-header">
+       
+      <%= link_to "Jimmy's Workout", new_user_session_path, class: "navbar-brand" %>
+      
+    </div> 
+    <% if (user_signed_in?) %>
+    <ul class="nav navbar-nav navbar-right">       
+      
+      <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+    </ul>
+    <% end %>
+  </div>
+</nav>
