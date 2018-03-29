@@ -3,12 +3,13 @@
     <% @workouts.each do |workout| %>
       <div class="panel panel-default index">
         <div class="container">
-          <h4>
-            <%= link_to workout.date.strftime("%A %B %d"), workout %>
-          </h4>
+          <h5>
+            <%= workout.date.strftime("%A %B %d") %>
+          </h5>
+          <h4><strong><%= link_to workout.workout, workout %></strong></h4>
           <p>
-            <span>Workout:</span>
-            <%= workout.workout %>
+            <span>Length:</span>
+            <%= workout.length %>
           </p>
         </div> 
       </div>
