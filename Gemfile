@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'sass-rails', '~> 5.0'
+gem 'devise', '~> 4.4', '>= 4.4.3'
 
 group :development, :test do
   gem 'byebug', platform: :mri
