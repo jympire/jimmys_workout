@@ -12,13 +12,17 @@
     <%= @workout.length %>
   </p>
 </div>
-<div id="exercises">
-  
-</div>
-
 <br>
 
+<h4>Exercises</h4>
+<%= render @workout.exercises %>
+
 <% if (user_signed_in?) %>
+  <h5>Add an Exercise</h5>
+  <%= render "exercises/form" %>  
+
+  <br>
+
   <%= link_to "Back", root_path %>&nbsp;
   <%= link_to "Edit", edit_workout_path(@workout) %>&nbsp;
   <%= link_to "Delete", workout_path(@workout), method: :delete, data: { confirm: "Are you sure?" } %>
