@@ -8,7 +8,7 @@
         <%= exercise.sets %></h5>
         <h5><span>Reps:</span>
         <%= exercise.reps %></h5>
-        <% if exercise.link %>
+        <% if !exercise.link.blank? %>
           <h5><a href="<%= exercise.link %>" target="_blank">Watch Video</a></h5>
         <% end %>
       </div>
