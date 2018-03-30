@@ -1,6 +1,6 @@
 <div id="workout">
   <p>
-    <%= @workout.date %>
+    <%= @workout.date.strftime("%A, %B %d, %Y") %>
   </p>
   <h3>
     <strong><%= @workout.workout %></strong>
@@ -14,7 +14,7 @@
 </div>
 <br>
 
-<h4>Exercises</h4>
+<h4>Exercises (<%= @workout.exercises.count %>)</h4>
 <%= render @workout.exercises %>
 
 <% if (user_signed_in?) %>

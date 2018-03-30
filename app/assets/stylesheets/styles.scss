@@ -19,6 +19,7 @@ body {
 
 .container.content {
   margin-top: 50px;
+  min-height: 740px;
 }
 
 
@@ -242,4 +243,23 @@ input[type="checkbox"]:checked:before {
 .navbar .navbar-nav > li.open > a:focus,
 .navbar .navbar-nav > li.open > a:active {
   background-color: $white;
+}
+
+
+/* Footer */
+.footer {
+  width: 100% !important;
+  margin-top: 100px;
+  border-top: 1px solid $border;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-size: 0.85em;
+  max-height: 250px;
+  
+  li {
+    padding-right: 20px;
+    padding-bottom: 5px;
+    list-style: none !important;
+    text-decoration: none !important
+  }
 }
