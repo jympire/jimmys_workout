@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   
   resources :users, only: [:show]
   
-  resources :workouts
+  resources :workouts do
+    resources :exercises
+  end
 end
