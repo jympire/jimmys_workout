@@ -11,6 +11,10 @@ $background:                      #f0f3f5;
 body {
   font-family: 'Montserrat', sans-serif;
   color: $black;
+  
+  p {
+    font-weight: 300;
+  }
 }
 
 .container {
