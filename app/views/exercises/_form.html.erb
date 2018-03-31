@@ -1,9 +1,21 @@
-<%= simple_form_for([@workout, @workout.exercises.build]) do |f| %>
-  <%= f.input :name, input_html: { class: "form-control" } %>
-  <%= f.input :sets, input_html: { class: "form-control" } %>
-  <%= f.input :reps, input_html: { class: "form-control" } %>
-  <%= f.input :rest, input_html: { class: "form-control" } %>
-  <%= f.input :link, input_html: { class: "form-control" } %>
-  <br>
-  <%= f.button :submit, { class: "btn btn-save" } %>
-<% end %>
+<div class="row">
+  <div class="col-md-6">
+    <%= simple_form_for([@workout, @workout.exercises.build]) do |f| %>
+      <%= f.select :group, [["A", "A"], ["B", "B"], ["C", "C"], ["D", "D"], ["E", "E"]], id: "group", prompt: "Select a group", class: "form-control" %>
+
+      <br><br>
+
+      <%= f.input :name, input_html: { class: "form-control" } %>
+      <%= f.input :set_one, input_html: { class: "form-control" } %>
+      <%= f.input :set_two, input_html: { class: "form-control" } %>
+      <%= f.input :set_three, input_html: { class: "form-control" } %>
+      <%= f.input :set_four, input_html: { class: "form-control" } %>
+      <%= f.input :set_five, input_html: { class: "form-control" } %>
+      <%= f.input :rest, input_html: { class: "form-control" } %>
+      <%= f.input :link, input_html: { class: "form-control" } %>
+
+      <br>
+      <%= f.button :submit, { class: "btn btn-save" } %>
+    <% end %>  
+  </div>
+</div>
