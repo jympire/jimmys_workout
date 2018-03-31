@@ -10,28 +10,33 @@
         <%= exercise.name %></h5>
         
         <% if !exercise.set_one.blank? %>
-        <p><span>Set 1:</span>
-        <%= exercise.set_one %><p>
+          <p><span>Set 1:</span>
+          <%= exercise.set_one %><p>
         <% end %>
         
         <% if !exercise.set_two.blank? %>
-        <p><span>Set 2:</span>
-        <%= exercise.set_two %></p>
+          <p><span>Set 2:</span>
+          <%= exercise.set_two %></p>
         <% end %>
         
         <% if !exercise.set_three.blank? %>
-        <p><span>Set 3:</span>
-        <%= exercise.set_three %></p>
+          <p><span>Set 3:</span>
+          <%= exercise.set_three %></p>
         <% end %>
         
         <% if !exercise.set_four.blank? %>
-        <p><span>Set 4:</span>
-        <%= exercise.set_four %></p>
+          <p><span>Set 4:</span>
+          <%= exercise.set_four %></p>
         <% end %>
         
         <% if !exercise.set_five.blank? %>
-        <p><span>Set 5:</span>
-        <%= exercise.set_five %></p>
+          <p><span>Set 5:</span>
+          <%= exercise.set_five %></p>
+        <% end %>
+        
+        <% if !exercise.rest.blank? %>
+          <p><span>Rest:</span>
+          <%= exercise.rest %></p>
         <% end %>
         
         <% if !exercise.link.blank? %>
