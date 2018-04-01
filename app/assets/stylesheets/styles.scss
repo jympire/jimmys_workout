@@ -49,6 +49,30 @@ a:active {
 }
 
 
+/* Avatar */
+.avatar-tiny {
+  width: 20px;
+  border: 1px solid $border;
+}
+
+.avatar-small {
+  width: 35px;
+  border: 2px solid $border;
+}
+
+.avatar-medium {
+  width: 48px;
+}
+
+.avatar-large {
+  width: 68px;
+}
+
+.avatar-full {
+  width: 100%;
+}
+
+
 /* Panel */
 .panel.panel-default {
   box-shadow: none;
@@ -213,7 +237,6 @@ input[type="checkbox"]:checked:before {
 /* Navbar */
 .navbar {
   background-color: $white;
-  padding-top: 25px;
   
   .dropdown-menu hr {
     margin: 8px;
@@ -236,6 +259,7 @@ input[type="checkbox"]:checked:before {
   color: $primary;
   font-weight: bold;
   letter-spacing: 1px;
+  padding-top: 20px;
   
   &:hover {
     color: $primary;
