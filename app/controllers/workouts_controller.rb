@@ -7,6 +7,7 @@ class WorkoutsController < ApplicationController
   end
   
   def show
+    @workout.exercises = @workout.exercises.order("created_at DESC")
   end
   
   def new
