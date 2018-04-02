@@ -17,7 +17,7 @@
 
       <% if (!user_signed_in?) %>
       <ul class="nav navbar-nav navbar-right guest">
-        <li><a href="#">Posts</a></li>
+        <li><%= link_to "Posts", posts_path %></li>
         <li><a href="https://www.instagram.com/jimmysworkout/" target="_blank">Instagram</a></li>       
       </ul>
       <% end %>
@@ -31,7 +31,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><%= link_to "New Workout", new_workout_path %></li>
-            <li><a href="">New Post</a></li>
+            <li><%= link_to "New Post", new_post_path %></li>
             <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>         
           </ul>
         <% end %>

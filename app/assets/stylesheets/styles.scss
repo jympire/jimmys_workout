@@ -81,6 +81,21 @@ a:active {
   border: 2px solid $border;
 }
 
+.panel.panel-default.index {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid $border;
+}
+
+.panel.panel-default.post {
+  padding-top: 10px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid $border;
+}
+
 
 /* Alert */
 .alert {
@@ -222,15 +237,6 @@ input[type="checkbox"]:checked:before {
 /* Buttons */
 .btn.btn-save {
   padding: 10px 25px 10px 25px;
-}
-
-
-/* Panels */
-.panel.panel-default.index {
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  border: 1px solid $border;
 }
 
 

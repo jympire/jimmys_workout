@@ -1,0 +1,6 @@
+<%= simple_form_for(@post) do |f| %>
+  <%= f.input :date, label: "Date" %>
+  <%= f.input :content, label: "Say something.", input_html: { class: "form-control" } %>
+  <br/>
+  <%= f.button :submit, { class: "btn btn-save" } %>
+<% end %>
