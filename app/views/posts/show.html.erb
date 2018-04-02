@@ -6,13 +6,13 @@
           <span><%= image_tag avatar_url(@post.user), class: "img-circle avatar-medium" %>&nbsp;&emsp;<%= time_ago_in_words(@post.created_at) %> ago</span>
           <p></p>
           <p><%= @post.content %></p>
+          <% if (user_signed_in?) %>
+            <%= link_to "Edit", edit_post_path(@post) %>&nbsp;&emsp;
+            <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>  
+            <br><br>
+          <% end %>
         </div> 
       </div>
-      
-      <% if (user_signed_in?) %>
-        <%= link_to "Edit", edit_post_path(@post) %>&nbsp;&emsp;
-        <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>  
-      <% end %>
     </div>  
   </div>  
 </div>
