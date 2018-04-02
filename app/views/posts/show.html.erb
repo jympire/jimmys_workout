@@ -3,15 +3,14 @@
     <div>
       <div class="panel panel-default post">
         <div class="container">
-          <p>
-            <%= @post.created_at.strftime("%B %d, %Y") %>
-          </p>
+          <span><%= image_tag avatar_url(@post.user), class: "img-circle avatar-medium" %>&nbsp;&emsp;<%= time_ago_in_words(@post.created_at) %> ago</span>
+          <p></p>
           <p><%= @post.content %></p>
         </div> 
       </div>
       
       <% if (user_signed_in?) %>
-        <%= link_to "Edit", edit_post_path(@post) %>&nbsp;
+        <%= link_to "Edit", edit_post_path(@post) %>&nbsp;&emsp;
         <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>  
       <% end %>
     </div>  
