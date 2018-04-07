@@ -4,7 +4,7 @@
       <% @posts.each do |post| %>
         <div class="panel panel-default post">
           <div class="container">
-            <span><%= image_tag avatar_url(post.user), class: "img-circle avatar-medium" %>&nbsp;&emsp;<%= time_ago_in_words(post.created_at) %> ago</span>
+            <span><%= image_tag avatar_url(post.user), class: "img-circle avatar-medium" %>&nbsp;&emsp;<%= post.date.strftime("%A, %B %d, %Y") %></span>
             <p></p>
             <p><%= post.content %></p>
           </div> 
