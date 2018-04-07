@@ -16,7 +16,7 @@
 <br>
 
 <h4>Exercises (<%= @workout.exercises.count %>)</h4>
-<%= render @workout.exercises %>
+<%= render @workout.exercises.order("created_at ASC") %>
 
 <% if (user_signed_in?) %>
   <h5>Add an Exercise</h5>
