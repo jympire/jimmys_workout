@@ -320,3 +320,47 @@ input[type="checkbox"]:checked:before {
     text-decoration: none !important
   }
 }
+
+
+/* Pagination */
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+
+.pagination:after {
+  clear:box;
+}
+
+.pagination {
+  text-align: center;
+  margin: 0 0 3em 0;
+  a, .previous_page, .current, .next_page {
+    padding: .75em 1em;
+    margin: 0 .25em;
+    border-radius: 0.25em;
+    line-height: 20px;
+    text-decoration: none;
+    background: $white;
+    font-weight: 700;
+    font-size: .8em;
+    font-style: normal;
+    color: $dark;
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+  }
+  .current {
+    background: $primary;
+    color: $white;
+  }
+  .disabled {
+    color: $border;
+    &:hover {
+        color: $border;
+        background: $white;
+    }
+  }
+}

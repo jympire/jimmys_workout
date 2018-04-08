@@ -18,6 +18,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'simple_form', '~> 3.5', '>= 3.5.1'
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
 group :development, :test do
   gem 'byebug', platform: :mri
