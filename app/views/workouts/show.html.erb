@@ -5,9 +5,12 @@
   <h3>
     <strong><%= @workout.workout %></strong>
   </h3>
-  <h5>
+  <p>
+    <span>Type: <%= @workout.type %></span>
+  </p>
+  <p>
     <span>Workout Length: </span><%= @workout.length %>
-  </h5>
+  </p>
   <br>
   <p>
     <%= @workout.comment %>
