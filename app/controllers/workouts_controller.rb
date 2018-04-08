@@ -3,7 +3,7 @@ class WorkoutsController < ApplicationController
   before_action :find_workout, only: [:show, :edit, :update, :destroy]
   
   def index
-    @workouts = Workout.all.order("created_at DESC").paginate(page: params[:page], per_page: 2)
+    @workouts = Workout.all.order("created_at DESC").paginate(page: params[:page], per_page: 10)
   end
   
   def show
