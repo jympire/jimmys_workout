@@ -42,7 +42,7 @@ class WorkoutsController < ApplicationController
   private
   
   def workout_params
-    params.require(:workout).permit(:date, :workout, :comment, :length, :type)
+    params.require(:workout).permit(:date, :workout, :comment, :length, :workout_type, :location)
   end
   
   def find_workout
