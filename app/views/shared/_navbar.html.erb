@@ -17,6 +17,7 @@
 
       <% if (!user_signed_in?) %>
       <ul class="nav navbar-nav navbar-right guest">
+        <li><%= link_to "Workouts", workouts_path %></li>
         <li><%= link_to "Posts", posts_path %></li>
         <li><a href="https://www.instagram.com/jimmysworkout/" target="_blank">Instagram</a></li>       
       </ul>
